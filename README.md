@@ -42,7 +42,9 @@ First run the command npm install
 Then check if your local MongoDB server is working ( make sure to install mongoDB server on your localMachine)
 Make sure your port 5000 is not occupied, if you have a tast running on port
 run the comman "npm run dev" and the server should start working
-
+```
+npm install --legacy-peer-deps && npm run dev
+```
 ## APIS
 ```
 //@desc     Register a new user
