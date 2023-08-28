@@ -2,34 +2,34 @@
 
 ## Project structure
 
-
-## Tocos-assignment-server/
-## |-- config/
-## |   |-- config.env
-## |   |-- eb.js
-## |-- controllers/
-## |   |-- usersController.js
-## |   |-- transactionsController.js
-## |-- Middlewares/
-## |   |-- authMiddleware.js
-## |   |-- errorMiddleware.js
-## |-- models/
-## |   |-- userModel.js
-## |   |-- transactionsModel.js
-## |-- routes/
-## |   |-- userRoutes.js
-## |   |-- transactionRoutes.js
-## |-- tests/
-## |   |-- APIs.test.js
-## |   |-- functions.test.js
-## |-- utils/
-## |   |-- validators.js
-## |   |-- consts.js
-## |-- server.js
-## |-- package.json
-## |-- README.md
-## |-- .gitignore
-
+```
+### Tocos-assignment-server/
+ |-- config/
+ |   |-- config.env
+ |   |-- eb.js
+ |-- controllers/
+ |   |-- usersController.js
+ |   |-- transactionsController.js
+ |-- Middlewares/
+ |   |-- authMiddleware.js
+ |   |-- errorMiddleware.js
+ |-- models/
+ |   |-- userModel.js
+ |   |-- transactionsModel.js
+ |-- routes/
+ |   |-- userRoutes.js
+ |   |-- transactionRoutes.js
+ |-- tests/
+ |   |-- APIs.test.js
+ |   |-- functions.test.js
+ |-- utils/
+ |   |-- validators.js
+ |   |-- consts.js
+ |-- server.js
+ |-- package.json
+ |-- README.md
+ |-- .gitignore
+```
 ## Table of Contents (Optional)
 
 - [Installation](#installation)
