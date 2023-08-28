@@ -44,7 +44,7 @@ Make sure your port 5000 is not occupied, if you have a tast running on port
 run the comman "npm run dev" and the server should start working
 
 ## APIS
-
+```
 //@desc     Register a new user
 //@route    POST /api/users
 //@access   Public API
@@ -67,9 +67,10 @@ run the comman "npm run dev" and the server should start working
 //@route    get /api/transactions/:userId
 //@access   private API
 
-
+```
 
 ## Tests
+```
 //To run all tests run the cmd "npm run test" in root folder
 @API tests
 //GET /api/users/:id
@@ -86,3 +87,4 @@ API should Reject a request with transferred amount greater than sender balance
 --tests
 API should Reject invalid credentials to register a new user
 API should register a new user, If user exists handles exception
+```
