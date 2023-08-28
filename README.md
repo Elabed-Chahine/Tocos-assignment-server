@@ -53,7 +53,7 @@ npm install --legacy-peer-deps && npm run dev
 
 //@desc     login user
 //@route    POST /api/users/login
-//@access   protected(tocos registered users)
+//@access   protected( registered users)
 
 
 //@desc     get a single user details
@@ -69,6 +69,10 @@ npm install --legacy-peer-deps && npm run dev
 //@route    get /api/transactions/:userId
 //@access   private API
 
+
+//@desc        search Users
+//@route       get /api/users/search?q=
+//@access      private(connected users only)
 ```
 
 ## Tests
