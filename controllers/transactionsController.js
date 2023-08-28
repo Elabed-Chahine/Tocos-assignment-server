@@ -36,7 +36,7 @@ exports.makeTransaction = asyncHandler(async (req, res) => {
     receiverUser.balance = receiverUser.balance + Number(transferredTocos)
     senderUser.save()
     receiverUser.save()
-    const description = `User ${senderUser.firstName} transferred ${transferredTocos} tocos to ${receiverUser.firstName}`
+    const description = `User ${senderUser.firstName} transferred ${transferredTocos} Tocos to ${receiverUser.firstName}`
 
     const transaction = await TransactionModel.create({ sender, receiver, transferredTocos, description });
 
@@ -55,6 +55,7 @@ exports.getOurTransactions = asyncHandler(async (req, res) => {
         res.status(400);
         throw new Error(`You have no transactions with yourself!`)
     }
+
     const transactions = await TransactionModel.find({ $or: [{ sender: req.uid, receiver: userId }, { sender: userId, receiver: req.uid }] }).populate("sender").populate("receiver").sort("-createdAt")
     if (!transactions) {
         res.status(400);

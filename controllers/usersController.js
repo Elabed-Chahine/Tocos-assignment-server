@@ -3,7 +3,7 @@ const { validateRegisterInput, validateLoginInput } = require('../utils/validato
 const UserModel = require('../models/UserModel');
 
 //@desc     Register a new user
-//@route    POST /api/users/register
+//@route    POST /api/users
 //@access   Public API
 exports.registerUser = asyncHandler(async (req, res) => {
     const { email, firstName, lastName, password } = req.body
