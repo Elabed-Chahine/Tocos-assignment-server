@@ -3,7 +3,7 @@
 ## Project structure
 
 ```
-### Tocos-assignment-server/
+Tocos-assignment-server/
  |-- config/
  |   |-- config.env
  |   |-- eb.js
